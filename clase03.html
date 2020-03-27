@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 03 - Bases Javascript</title>
+</head>
+
+<body>
+    <script>
+        let datosUsuarioLetras = []
+
+        let datosUsuarioNumeros = []
+
+        let numeroDeDatos = prompt('¿Cuantos datos ingresarás?');
+
+        numeroDeDatos = Number(numeroDeDatos);
+
+        for (i = 0; i < numeroDeDatos; i++) {
+            let nuevoDato = prompt('Ingresa un dato: ');
+
+            nuevoDato = nuevoDato.substr(0, 1);
+
+            let typeNuevoDato = typeof nuevoDato;
+
+            if (typeNuevoDato === typeof 4) {
+                datosUsuarioNumeros.push(nuevoDato);
+                console.log(datosUsuarioNumeros);
+            } else {
+                datosUsuarioLetras.push(nuevoDato);
+                console.log(datosUsuarioLetras);
+            }
+
+            // datosUsuarioNumeros.sort();
+            // datosUsuarioLetras.sort();
+
+            // let union = datosUsuarioLetras.concat(datosUsuarioNumeros);
+
+
+            // console.log(union);
+        }
+    </script>
+
+</body>
+
+</html>
